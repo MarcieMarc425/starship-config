@@ -27,11 +27,8 @@ brew install neofetch
 
 2. Add the plugin to the list of plugins for Oh My Zsh to load (inside `~/.zshrc`):
 
-    ```sh
-    plugins=( 
-        # other plugins...
-        zsh-autosuggestions
-    )
+    ```zsh
+    plugins=( [plugins...] zsh-autosuggestions)
     ```
 
 3. Start a new terminal session.
@@ -47,6 +44,21 @@ brew install neofetch
 
     ```zsh
     plugins=( [plugins...] zsh-syntax-highlighting)
+    ```
+
+3. Restart zsh (such as by opening a new instance of your terminal emulator).
+
+### zsh-z
+1. Clone this repository in oh-my-zsh's plugins directory:
+
+    ```zsh
+    git clone https://github.com/agkozak/zsh-z ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-z
+    ```
+
+2. Activate the plugin in `~/.zshrc`:
+
+    ```zsh
+    plugins=( [plugins...] zsh-z)
     ```
 
 3. Restart zsh (such as by opening a new instance of your terminal emulator).
