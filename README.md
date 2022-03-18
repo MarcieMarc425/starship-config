@@ -1,5 +1,8 @@
 # Terminal configs
 
+## Screenshot
+<img width="746" alt="Screen Shot 2022-03-18 at 12 15 59 PM" src="https://user-images.githubusercontent.com/32941251/158936466-5b7076a7-8461-418c-8815-dbed5be00108.png">
+
 ## Oh-my-zsh
 
 ```sh
