@@ -18,6 +18,9 @@ brew install starship
 brew install neofetch
 ```
 
+## Nerd Fonts
+Install [Nerd Fonts](https://www.nerdfonts.com/font-downloads) (i.e. Fira Code)
+
 ## zsh-autosuggestions
 1. Clone this repository into `$ZSH_CUSTOM/plugins` (by default `~/.oh-my-zsh/custom/plugins`)
 
