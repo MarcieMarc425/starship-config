@@ -40,6 +40,7 @@ Install [Nerd Fonts](https://www.nerdfonts.com/font-downloads) (i.e. Fira Code)
 3. Start a new terminal session.
 
 ### zsh-syntax-highlighting
+
 1. Clone this repository in oh-my-zsh's plugins directory:
 
     ```zsh
@@ -55,6 +56,7 @@ Install [Nerd Fonts](https://www.nerdfonts.com/font-downloads) (i.e. Fira Code)
 3. Restart zsh (such as by opening a new instance of your terminal emulator).
 
 ### zsh-z
+
 1. Clone this repository in oh-my-zsh's plugins directory:
 
     ```zsh
