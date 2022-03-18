@@ -1,0 +1,161 @@
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Customizing the prompt
+format = """
+$username\
+$hostname\
+$shlvl\
+$singularity\
+$kubernetes\
+$directory\
+$vcsh\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$hg_branch\
+$docker_context\
+$package\
+$cmake\
+$cobol\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$golang\
+$helm\
+$java\
+$julia\
+$kotlin\
+$lua\
+$nim\
+$nodejs\
+$ocaml\
+$perl\
+$php\
+$pulumi\
+$purescript\
+$python\
+$rlang\
+$red\
+$ruby\
+$rust\
+$scala\
+$swift\
+$terraform\
+$vlang\
+$vagrant\
+$zig\
+$nix_shell\
+$conda\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$azure\
+$env_var\
+$crystal\
+$custom\
+$sudo\
+$cmd_duration\
+$line_break\
+$jobs\
+$battery\
+$time\
+$status\
+$shell\
+[$character](bold green)"""
+
+[custom.file_number]
+command = "find . -maxdepth 1 -type f -not -name '.DS_Store' | wc -l"
+when = "exit 0" # run always
+symbol = " "
+description = "Number of files in the current working directory"
+format = '[$symbol$output]($style) '
+style = "fg:yellow bg:black bold" # terminus different
+
+[custom.folder_number]
+command = "find . -maxdepth 1 -type d -not -name '.git' -not -name '.' | wc -l"
+when = "exit 0"
+symbol = " "
+description = "Number of folders in the current working directory"
+format = '[$symbol$output]($style) '
+style = "fg:yellow bg:black bold" # terminus different
+
+# Configure if and how the time is shown
+[time]
+disabled = false
+time_format = "%a %b %d %Y %T"
+format = "🕙 [$time ](bold blue)"
+
+[sudo]
+disabled = false
+style = "bold green"
+symbol = "💪"
+format = "[<SUDO>$symbol]($style)"
+
+[status]
+disabled = false
+style = "bg:blue"
+symbol = "🔴"
+map_symbol = true
+format = '[\[$symbol $common_meaning$signal_name$maybe_int\]]($style) '
+
+[aws]
+symbol = "  "
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[directory]
+read_only = " "
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[package]
+symbol = " "
+
+[rust]
+symbol = " "
+
