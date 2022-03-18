@@ -14,10 +14,8 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME=""
 
 #Plugins
-plugins=(git zsh-autosuggestions)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
-
-source /usr/local/share/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #Star Ship
 eval "$(starship init zsh)"
